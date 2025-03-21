@@ -1,0 +1,20 @@
+;
+; Copyright (c) 2020 Raspberry Pi (Trading) Ltd.
+;
+; SPDX-License-Identifier: BSD-3-Clause
+;
+
+; SET pin 0 should be mapped to your input pin
+.program blink
+
+; Wait for rising edge on input
+wait 1 pin 0   ; Wait for the input pin to go high
+
+; Output 10 pulses at 200 kHz
+set x, 9       ; Initialize pulse counter (10 pulses total)
+
+loop:
+    set pins, 1 [4] ; Output high, delay
+    set pins, 0 [13] ; Output low, delay
+    jmp x-- loop    ; Repeat 10 times
+    
