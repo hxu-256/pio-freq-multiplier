@@ -1,7 +1,7 @@
 # PIO-Based 10x Trigger Generator for Data Subsampling
 
 ## Overview
-This repository contains a PIO (Programmable Input/Output) module for the Raspberry Pi Pico that generates a 10× frequency clock from an external trigger. This is useful for oversampling and averaging, where a 20 kHz input trigger is converted to a 200 kHz output signal for a DAQ system.
+This repository contains a PIO (Programmable Input/Output) module for the Raspberry Pi Pico that generates a 10× frequency clock from an external trigger. This is useful for oversampling and averaging, where a 20 kHz input trigger is converted to a 200 kHz output signal for a DAQ system. The code is modified based on the official Raspberry Pi Pico PWM examples.
 
 ## Features
 
